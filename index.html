@@ -12,63 +12,117 @@
 </head>
 <body>
     <header >
-        <h1 class="text-white">
-            Ivan A. Pino C.
-        </h1>
-        <h6 class="text-white">
-            Descripción breve sobre Mi.
-        </h6>
+        <div class="logo">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="brand navbar-brand px-4 me-sm-3 fw-bold" href="#">I<span>P</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <a class="nav-link" href="#about">Sobre Mi</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <a class="nav-link" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="nav-responsive " onclick="mostrarOculatarMenu()">
+            <i class="fa-solid fa-bars"></i>        
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand px-4 me-sm-3 fw-bold" href="#">Mi Portafolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto ">
-                <li class="nav-item btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
-                    <a class="nav-link" href="#about">Sobre Mi</a>
-                </li>
-                <li class="nav-item btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
-                    <a class="nav-link" href="#skills">Habilidades</a>
-                </li>
-                <li class="nav-item btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
-                    <a class="nav-link" href="#projects">Proyectos</a>
-                </li>
-                <li class="nav-item btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">
-                    <a class="nav-link" href="#contact">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    
 
     <main>
         <div>
+            <section id="inicio" class="inicio">
+                <div class="contenido-banner">
+                    <div class="contenedor-img">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </section>
+            <div class="container fs-5 mb-4 col-lg-6 mx-auto">
+            <h1>IVAN PINO C.</h1>
+            <H2>Terapeuta Ocupacional y full stack python </H2>
+            </div>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa-brands fa-linkeding-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
         <section id="about" class="fs-5 mb-4 col-lg-6 mx-auto">
-            <p>
-            <h2>Sobre Mi</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel est vel mauris condimentum varius vitae in nunc. Donec euismod fermentum nisi, non consectetur ligula mollis vel. Donec ac consectetur nunc, at consectetur dolor. Donec vel sem vel neque dignissim pharetra. Nulla facilisi. Donec nec gravida ex.
-            </p>
+            <div class="contenido-seccion">
+                <p>
+                    <h2>Sobre Mi</h2>
+                <p><span> Hola, soy Ivan Pino </span>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel est vel mauris condimentum varius vitae in nunc. Donec euismod fermentum nisi, non consectetur ligula mollis vel. Donec ac consectetur nunc, at consectetur dolor. Donec vel sem vel neque dignissim pharetra. Nulla facilisi. Donec nec gravida ex.
+                </p>
+                <div class="fila">
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                30-08-1983
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
         </section>
+        
         <section id="skills" class="container fs-5 mb-4 col-lg-6 mx-auto">
-            <h2>
-                Habilidades
-            </h2>
-            <ul>
-                <li>
-                    Python
-                </li>
-                <li>
-                    Javascript
-                </li>                
-            </ul>
+            <div class="contenido-seccion">
+                <h2>HABILIDADES</h2>
+                <div class="fila">
+                    <div class ="col">
+                        <h3>Habilidades Tecnicas </h3>
+                        <div class="skill"></div>
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="col">                        
+                        <div class="skill"></div>
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="col">                        
+                        <div class="skill"></div>
+                        <span>HTML5</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </section>
 
-        <section id="projects" class="container mt-5 fs-5 mb-4">
-            <h2>Proyectos</h2>
+        <section id="Proyectos" class="container fs-5 mb-4 col-lg-6 mx-auto">
+            <h2>PROYECTOS</h2>
             <div class="row">
                 <div class="col-md-6 mb-4">
                     <div class="card bg-dark text-white">
@@ -107,7 +161,7 @@
     </div>
     </main>
 
-    <footer id="contact" class="card container mt-5 text-white bg-dark text-secondary px-4 py-5 text-center">
+    <section id="contact" class="card container mt-5 text-white bg-dark text-secondary px-4 py-5 text-center container fs-5 mb-4 col-lg-6 mx-auto">
         <h2>Contacto</h2>
         <form id="contact-form">
             <div class="form-group">
@@ -124,6 +178,18 @@
             </div>
             <button type="submit" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Enviar</button>
         </form>
+    </section>
+    <footer>
+        <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
