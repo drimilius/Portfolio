@@ -1,10 +1,42 @@
-$(document).ready(function() {
-    $('.card').on('click', function() {
-        $(this).toggleClass('bg-info');
-    });
+// botón "Download CV"
+const downloadButton = document.querySelector('.download');
+downloadButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    alert('Descargando CV de Iván Pino...');
+    // Aquí puedes agregar lógica para manejar la descarga real si es necesario
+});
 
-    $('#contact-form').on('submit', function(event) {
-        event.preventDefault();
-        alert('Formulario enviado correctamente');
+//  botón "Más" en la sección "Sobre Mi"
+const moreButton = document.querySelector('.about-info .download');
+moreButton.addEventListener('click', () => {
+    alert('Mostrando más información sobre Iván Pino...');
+    // Aquí puedes agregar lógica para expandir información si es necesario
+});
+
+// botones "detalles de Proyecto"
+const detailButtons = document.querySelectorAll('.detalles-proyecto');
+detailButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Redirigiendo a los detalles del proyecto...');
+        // Aquí puedes agregar lógica para redirigir a la página de detalles del proyecto
     });
+});
+
+// Validación  formulario de contacto
+const contactForm = document.querySelector('.contact-form form');
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const subject = document.getElementById('subject').value.trim();
+    const message = document.getElementById('message').value.trim();
+
+    if (name === '' || email === '' || subject === '' || message === '') {
+        alert('Por favor, complete todos los campos del formulario.');
+        return;
+    }
+
+    alert('Mensaje enviado con éxito. ¡Gracias por contactarnos!');
+    
 });
