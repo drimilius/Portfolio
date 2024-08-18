@@ -155,31 +155,69 @@ span {
     justify-content: center;
 }
 .card {
-    width: 300px;   
+    width: 400px;   
     background-color: #191c32;
     height: 350px;
     color: #fff;
-    margin: 1em;
-
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    position: relative;
 }
+
 .card_img {
     width: 100%;
     height: 150px;
-    background-image: url(/assets/img/v1016-b-09.jpg);
-    background-size: cover;
+    overflow:visible;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card_img img {
+    transition: transform 0.3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 5;
+}
+.card_img img.zoomed {
+    transform: scale(1.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .card_tittle {
     padding: 20px;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
+
 .link_proyect{
     display: flex;
     justify-content: space-evenly;
+    margin-top: auto;
+    
 
 }
 .link_proyect a{
     color:#fff;
     text-decoration: none;
+    margin: 1em;
 }
 .link_proyect i {
     font-size: 2em;
@@ -189,7 +227,8 @@ span {
     display: flex;
     margin: 0 auto;
     margin: 1em;
-    width: 70%;   
+    width: 70%;
+    justify-content: center;   
 }
 .card .detalles-proyecto a{
     text-decoration: none;
@@ -200,7 +239,7 @@ span {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: 1em;
+    margin-top: auto;
 }
 
 /*habilidades*/
@@ -321,5 +360,13 @@ span {
     text-align: center;
     width: 100vw;
     height: 200px;
+    margin-top: 1em;
 }
- 
+
+.social-network a {
+    color: #191c32;
+    text-decoration: none;
+    width: 100vw;    
+    font-size: 3em;
+    margin: 1em;
+}

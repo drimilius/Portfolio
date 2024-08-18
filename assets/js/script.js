@@ -40,3 +40,17 @@ contactForm.addEventListener('submit', (e) => {
     alert('Mensaje enviado con éxito. ¡Gracias por contactarnos!');
     
 });
+const imagenes = document.querySelectorAll('#img1, #img2, #img3');
+//evento
+imagenes.forEach((img) => {
+    img.addEventListener('click', function(){
+        this.classList.add('zoomed');
+        this.style.transform = 'scale(2)';
+        
+    });
+    img.addEventListener('mouseout', function(){
+        this.classList.add('zoomed');
+        this.style.transform = 'scale(1)';
+        
+    });
+});
