@@ -23,22 +23,25 @@ detailButtons.forEach(button => {
     });
 });
 
-// Validación  formulario de contacto
+// Validación del formulario de contacto
 const contactForm = document.querySelector('.contact-form form');
 contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Previene el envío del formulario
+
+    // Obtiene los valores de los campos del formulario
     const name = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const subject = document.getElementById('subject').value.trim();
     const message = document.getElementById('message').value.trim();
 
+    // Verifica si algún campo está vacío
     if (name === '' || email === '' || subject === '' || message === '') {
         alert('Por favor, complete todos los campos del formulario.');
         return;
     }
 
+    // Muestra un mensaje de éxito
     alert('Mensaje enviado con éxito. ¡Gracias por contactarnos!');
-    
 });
 const imagenes = document.querySelectorAll('#img1, #img2, #img3');
 //evento
