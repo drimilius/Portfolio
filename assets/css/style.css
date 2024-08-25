@@ -18,7 +18,7 @@ body {
 .wrapper {
     width: 100vw;
     height: 100vh;
-    background-color: #191c32;
+    background-image: url(/assets/img/rm373batch9-035.jpg);
     color:#fff;
 }
 /*nav*/
@@ -160,7 +160,7 @@ span {
     width: 100vw;
     height: 100vh;
     align-items: center;
-    background-color: #191c32;
+    background-image: url(/assets/img/rm373batch9-035.jpg);
 }
 .habilidades img {
     width: 350px;
@@ -273,7 +273,7 @@ span {
 .link_proyect {
     display: flex;
     justify-content: space-evenly;
-    margin-top: auto;
+    margin-top: -3em;
 }
 
 .link_proyect a {
@@ -284,7 +284,9 @@ span {
 
 .link_proyect i {
     font-size: 2em;
-    color: #fff;
+    color:aqua;
+    border: #fff;
+    
 }
 
 .card .detalles-proyecto {
@@ -317,7 +319,7 @@ span {
 .seccion-contacto{
     width: 100vw;
     height: 100vh;
-    background-color: #191c32;
+    background-image: url(/assets/img/rm373batch9-035.jpg);
     
 }  
 .contact-head {
